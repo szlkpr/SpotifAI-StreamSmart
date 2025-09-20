@@ -30,8 +30,8 @@
 
 1. **Clone and setup**
    ```bash
-   git clone https://github.com/yourusername/spotifai-streamsmart.git
-   cd spotifai-streamsmart
+   git clone https://github.com/szlkpr/SpotifAI-StreamSmart.git
+   cd SpotifAI-StreamSmart
    npm install
    ```
 
