@@ -1,0 +1,38 @@
+{
+  "name": "spotifai-streamsmart",
+  "version": "1.0.0",
+  "description": "AI-Powered Music Intelligence Platform - Where Spotify meets ChatGPT",
+  "main": "src/index.html",
+  "homepage": ".",
+  "scripts": {
+    "start": "node config/server.js",
+    "dev": "nodemon config/server.js",
+    "build": "echo 'Building SpotifAI - StreamSmart...'",
+    "serve": "npx http-server . -p 3000 -o --cors -c-1 -d false",
+    "test": "echo 'No tests specified yet'"
+  },
+  "keywords": ["ai", "music", "gemini", "spotify", "streaming", "aws", "amplify"],
+  "author": {
+    "name": "SpotifAI Team",
+    "email": "contact@spotifai-streamsmart.com",
+    "url": "https://github.com/yourusername/spotifai-streamsmart"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/spotifai-streamsmart.git"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

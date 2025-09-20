@@ -1,0 +1,35 @@
+{
+    "title": "SpotifAI - StreamSmart",
+    "description": "AI-Powered Music Intelligence Platform - Where Spotify meets ChatGPT to deepen your connection with music",
+    "version": "1.0.0",
+    "author": "SpotifAI Team",
+    "tagline": "Your Personal Music Analyst",
+    "features": {
+        "working": [
+            "AI Mood Detection",
+            "Intelligent Song Explanations",
+            "Conversational Music Search",
+            "Smart Recommendations",
+            "One-Click AI Playback",
+            "Cross-Playlist Intelligence",
+            "Modern Spotify-Inspired UI",
+            "Advanced Audio Controls"
+        ],
+        "planned": [
+            "Real Lyric Analysis",
+            "Audio Feature Analysis",
+            "Social Music Sharing",
+            "Personalization Engine",
+            "Voice Assistant Integration",
+            "Mobile App"
+        ]
+    },
+    "tech_stack": [
+        "JavaScript (ES6+)",
+        "OpenAI GPT API",
+        "HTML5/CSS3",
+        "Web Audio API",
+        "AWS Amplify (Ready)",
+        "JSON-based Architecture"
+    ]
+}

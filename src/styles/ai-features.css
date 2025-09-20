@@ -1,0 +1,316 @@
+/* ========================================= */
+/* AI Feature Styling for SpotifAI - StreamSmart */
+/* Your Personal Music Analyst              */
+/* ========================================= */
+
+/* --- Layout Fix for AI Buttons --- */
+/* This rule is crucial. It makes the song title container flexible,
+   allowing the AI buttons to appear on the right. */
+.songList .info {
+    flex-grow: 1;
+}
+
+/* --- Song List AI Buttons --- */
+
+/* This container holds the two AI buttons. */
+.ai-actions {
+    display: flex;      /* Aligns buttons in a row */
+    align-items: center;
+    gap: 8px;           /* Space between the two buttons */
+    margin-left: auto;  /* Pushes the buttons to the far right. */
+}
+
+/* --- Playlist Description in Library --- */
+/* Styles for the description text that appears under the playlist title. */
+.playlist-desc {
+    color: #a7a7a7;
+    font-size: 0.9rem;
+    padding: 0 8px 8px; /* Matches m-1/p-1 spacing */
+    margin: 0;
+}
+
+
+/* Individual styling for the AI buttons (mood, explainer). */
+/* A clean, modern design: transparent by default, with a background appearing on hover. */
+.ai-btn {
+    background-color: transparent; /* Subtle by default */
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular shape */
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Set the size of the icons inside the buttons */
+.ai-btn img {
+    width: 20px; /* Increased size for better visibility */
+    height: 20px;
+    /* The icons are grey by default from the SVG file's fill="#a7a7a7" */
+    transition: filter 0.2s ease-in-out;
+}
+
+/* A subtle background appears on hover. */
+.ai-btn:hover {
+    background-color: #2a2a2a; /* Dark background on hover */
+}
+
+/* Makes the icon image turn white on hover for better feedback. */
+.ai-btn:hover img {
+    filter: brightness(0) invert(1); /* Turns the grey icon to pure white */
+}
+
+/* --- AI Recommender Section --- */
+
+/* The main container for the recommendation feature. */
+.ai-recommender {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px; /* Space between this and the playlist cards */
+}
+
+.ai-recommender h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.ai-recommender p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #a7a7a7;
+    font-size: 0.9rem;
+}
+
+/* The container for the input field and the button. */
+.ai-search-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px; /* Prevents it from getting too wide on large screens */
+}
+
+/* The text input field for the AI prompt. */
+#ai-recommendation-input {
+    flex-grow: 1; /* Allows the input to take up the available space */
+    background-color: #2a2a2a;
+    border: 1px solid transparent; /* Start with a transparent border */
+    border-radius: 4px;
+    padding: 10px 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#ai-recommendation-input::placeholder {
+    color: #a7a7a7;
+}
+
+/* Adds a white border when the user clicks into the input. */
+#ai-recommendation-input:focus {
+    border-color: #ffffff;
+}
+
+/* The "Find Music" button. */
+#ai-recommendation-btn {
+    background-color: #1ed760; /* Spotify's signature green */
+    color: #121212;
+    border: none;
+    border-radius: 500px; /* Creates the pill shape */
+    padding: 10px 24px;
+    font-weight: bold;
+    transition: transform 0.1s ease-in-out, background-color 0.2s ease-in-out;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    cursor: pointer;
+
+    /* Add flex properties to center content (like the spinner) and min-dimensions to prevent resizing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 115px;
+    min-height: 42px;
+}
+
+/* A nice scaling effect on hover. */
+#ai-recommendation-btn:hover {
+    transform: scale(1.05);
+    background-color: #1fdf64;
+}
+
+/* --- AI Recommendation Results --- */
+
+.recommendation-list {
+    margin-top: 24px;
+}
+
+.recommendation-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    transition: background-color 0.2s ease-in-out;
+    position: relative; /* Needed for positioning the play button */
+}
+
+/* Add a pointer cursor and hover effect only for playable items */
+.recommendation-item.playable {
+    cursor: pointer;
+}
+
+.recommendation-item.playable:hover {
+    background-color: #3e3e3e;
+}
+
+/* The play button that appears on hover for playable songs */
+.recommendation-play-btn {
+    display: none; /* Hidden by default */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1ed760; /* Spotify green */
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommendation-item.playable:hover .recommendation-play-btn {
+    display: flex; /* Show on hover */
+}
+
+.recommendation-item .song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation-play-btn img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0); /* Make the play icon black for contrast */
+}
+
+.recommendation-item .song-title {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.recommendation-item .song-artist {
+    font-size: 0.85rem;
+    color: #a7a7a7;
+}
+
+/* --- Spinner for Loading States --- */
+
+/* The spinner element itself */
+.spinner {
+    margin: 0; /* Centering is now handled by the button's flex properties */
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.4); /* Lighter track for visibility */
+    border-radius: 50%;
+    border-top-color: #ffffff; /* White for high contrast on green button */
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+/* The button needs to accommodate the spinner without changing size */
+#ai-recommendation-btn:disabled {
+    cursor: not-allowed;
+    transform: scale(1); /* Prevent hover scale effect when disabled */
+    background-color: #1ed760; /* Keep the green color */
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+/* --- AI Response Modal --- */
+
+/* The overlay that covers the entire screen when the modal is open */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    z-index: 1000; /* High z-index to appear above all other content */
+    align-items: center;
+    justify-content: center;
+}
+
+/* When the modal is shown, it becomes a flex container */
+.modal-overlay[style*="flex"] {
+    display: flex;
+}
+
+/* The actual modal content box */
+.modal-content {
+    background-color: #181818; /* Dark background matching the app */
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* The close button (×) in the top-right corner */
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #a7a7a7;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease-in-out;
+}
+
+.modal-close:hover {
+    color: #ffffff;
+}
+
+/* The modal title */
+#modal-title {
+    margin: 0 0 16px 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-right: 40px; /* Space for the close button */
+}
+
+/* The container for the modal text content */
+#modal-text-container {
+    margin: 0;
+}
+
+/* The actual text content */
+#modal-text {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}

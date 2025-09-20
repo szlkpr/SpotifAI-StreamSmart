@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Generated environment files (keep template .env for reference)
+src/scripts/env.local.js
+
+# Build outputs
+build/
+dist/
+.next/
+.nuxt/
+out/
+
+# Cache
+.cache/
+.parcel-cache/
+.npm
+.eslintcache
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# AWS Amplify
+amplify/
+aws-exports.js
+.amplify/
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+
+# Archive folder (development only)
+archive/
+
+# Local test files
+test-local.html
