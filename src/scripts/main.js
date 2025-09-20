@@ -69,7 +69,7 @@ async function callGeminiDirect(userContent, options = {}) {
     const { temperature = 0.7, max_tokens = 150 } = options;
     
     // Get API key from environment variables or show error
-    const GEMINI_API_KEY = window.ENV?.GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+    const GEMINI_API_KEY = window.ENV?.GEMINI_API_KEY;
 
     if (!GEMINI_API_KEY) {
         throw new Error('⚠️ Gemini API key not configured. Please set GEMINI_API_KEY environment variable or configure Amplify backend.');
