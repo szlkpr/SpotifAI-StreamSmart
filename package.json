@@ -2,7 +2,7 @@
   "name": "spotifai-streamsmart",
   "version": "1.0.0",
   "description": "AI-Powered Music Intelligence Platform - Where Spotify meets ChatGPT",
-  "main": "src/index.html",
+  "main": "index.html",
   "homepage": ".",
   "scripts": {
     "start": "node config/server.js",
