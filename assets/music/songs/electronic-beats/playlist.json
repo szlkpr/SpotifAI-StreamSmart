@@ -1,14 +1,53 @@
 {
-    "title": "Electronic Beats",
-    "description": "Pulsing synths and driving beats for the digital age.",
-    "genre": "Electronic/EDM",
-    "mood": "energetic",
-    "songs": [
-        "Neon Nights.mp3",
-        "Cyber Dreams.mp3",
-        "Electric Pulse.mp3",
-        "Digital Dawn.mp3",
-        "Synth Wave.mp3",
-        "Future Bass.mp3"
-    ]
+  "title": "Electronic Beats 🎛️",
+  "description": "Pulsing synths and driving beats for the digital age.",
+  "genre": "Electronic/EDM",
+  "mood": "energetic",
+  "cover": "https://images.unsplash.com/photo-1574193080071-54b43e0f3a89?w=300&h=300&fit=crop",
+  "songs": [
+    "Neon Nights.mp3",
+    "Cyber Dreams.mp3",
+    "Electric Pulse.mp3",
+    "Digital Dawn.mp3",
+    "Synth Wave.mp3",
+    "Future Bass.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Neon Nights.mp3",
+      "title": "Neon Nights",
+      "artist": "Synth Masters",
+      "duration": "4:18"
+    },
+    {
+      "file": "Cyber Dreams.mp3",
+      "title": "Cyber Dreams",
+      "artist": "Digital Pulse",
+      "duration": "5:24"
+    },
+    {
+      "file": "Electric Pulse.mp3",
+      "title": "Electric Pulse",
+      "artist": "Bass Drop",
+      "duration": "3:47"
+    },
+    {
+      "file": "Digital Dawn.mp3",
+      "title": "Digital Dawn",
+      "artist": "Future Sound",
+      "duration": "4:55"
+    },
+    {
+      "file": "Synth Wave.mp3",
+      "title": "Synth Wave",
+      "artist": "Retro Future",
+      "duration": "4:12"
+    },
+    {
+      "file": "Future Bass.mp3",
+      "title": "Future Bass",
+      "artist": "EDM Collective",
+      "duration": "3:33"
+    }
+  ]
 }

@@ -1,14 +1,53 @@
 {
-    "title": "Acoustic Sessions",
-    "description": "Intimate performances with just voice and guitar.",
-    "genre": "Acoustic/Folk",
-    "mood": "peaceful",
-    "songs": [
-        "Campfire Stories.mp3",
-        "Whispered Words.mp3",
-        "Morning Coffee.mp3",
-        "Old Oak Tree.mp3",
-        "Sunset Road.mp3",
-        "Simple Things.mp3"
-    ]
+  "title": "Acoustic Sessions 🎻",
+  "description": "Intimate performances with just voice and guitar.",
+  "genre": "Acoustic/Folk",
+  "mood": "peaceful",
+  "cover": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=300&h=300&fit=crop",
+  "songs": [
+    "Campfire Stories.mp3",
+    "Whispered Words.mp3",
+    "Morning Coffee.mp3",
+    "Old Oak Tree.mp3",
+    "Sunset Road.mp3",
+    "Simple Things.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Campfire Stories.mp3",
+      "title": "Campfire Stories",
+      "artist": "Folk Tales",
+      "duration": "4:23"
+    },
+    {
+      "file": "Whispered Words.mp3",
+      "title": "Whispered Words",
+      "artist": "Gentle Soul",
+      "duration": "3:56"
+    },
+    {
+      "file": "Morning Coffee.mp3",
+      "title": "Morning Coffee",
+      "artist": "Early Bird",
+      "duration": "3:42"
+    },
+    {
+      "file": "Old Oak Tree.mp3",
+      "title": "Old Oak Tree",
+      "artist": "Nature's Voice",
+      "duration": "4:18"
+    },
+    {
+      "file": "Sunset Road.mp3",
+      "title": "Sunset Road",
+      "artist": "Journey Home",
+      "duration": "4:45"
+    },
+    {
+      "file": "Simple Things.mp3",
+      "title": "Simple Things",
+      "artist": "Peaceful Mind",
+      "duration": "3:37"
+    }
+  ]
 }

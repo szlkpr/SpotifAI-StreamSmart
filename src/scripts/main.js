@@ -353,7 +353,7 @@ const playMusic = (index, pause = false) => {
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
 }
 
-function renderAndAttachListeners(songArray) {
+function renderAndAttachListeners(songArray, playlistMetadata = null) {
     const songUL = document.querySelector(".songList ul");
     if (!songUL) {
         console.error("Song list UL element not found!");
@@ -363,17 +363,28 @@ function renderAndAttachListeners(songArray) {
 
     for (const [index, song] of songArray.entries()) {
         const songName = song.replace(/\.mp3$/, "");
+        
+        // Get metadata for this song if available
+        let artistName = "Artist Name";
+        let duration = "3:00";
+        
+        if (playlistMetadata && playlistMetadata[index]) {
+            const metadata = playlistMetadata[index];
+            artistName = metadata.artist || "Unknown Artist";
+            duration = metadata.duration || "3:00";
+        }
+        
         const li = document.createElement('li');
         li.dataset.track = song;
-
         li.className = 'songItem';
         li.style.position = 'relative';
         li.innerHTML = `
             <img class="invert" width="34" src="/assets/images/svgs/music.svg" alt="Music icon">
             <div class="info">
-                <div>${songName}</div>
-                <div>Artist Name</div>
+                <div class="song-title">${songName}</div>
+                <div class="song-artist">${artistName}</div>
             </div>
+            <div class="song-duration">${duration}</div>
             <div class="ai-actions">
                 <button class="ai-btn mood-btn" title="Detect Song Mood">
                     <img src="/assets/images/svgs/mood.svg" alt="Detect Mood">
@@ -432,7 +443,7 @@ async function main() {
         playMusic(0, true);
     }
     
-    renderAndAttachListeners(songs);
+    renderAndAttachListeners(songs, playlist.metadata);
 
     // Music player controls
     let play = document.querySelector(".playbtn");
@@ -506,7 +517,7 @@ async function main() {
             const playlist = await getSongs(songLocation.folder);
             songs = playlist.songs.map(song => decodeURIComponent(song));
             updatePlaylistHeader(playlist.title, playlist.description);
-            renderAndAttachListeners(songs);
+            renderAndAttachListeners(songs, playlist.metadata);
 
             const songIndex = songs.findIndex(s => s.toLowerCase() === songLocation.fileName.toLowerCase());
             if (songIndex !== -1) {
@@ -563,7 +574,7 @@ async function main() {
             const playlist = await getSongs(folder);
             songs = playlist.songs.map(song => decodeURIComponent(song));
             updatePlaylistHeader(playlist.title, playlist.description);
-            renderAndAttachListeners(songs);
+            renderAndAttachListeners(songs, playlist.metadata);
     
             if (songs.length > 0) {
                 playMusic(0);

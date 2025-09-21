@@ -1,14 +1,53 @@
 {
-    "title": "Chill Vibes",
-    "description": "Relax and unwind with these peaceful, ambient tunes.",
-    "genre": "Ambient/Chill",
-    "mood": "relaxed",
-    "songs": [
-        "Meditation Music.mp3",
-        "Nature Sound.mp3",
-        "Relaxing Piano Music.mp3",
-        "Tibet.mp3",
-        "Ocean Waves.mp3",
-        "Forest Dreams.mp3"
-    ]
+  "title": "Chill Vibes 🌊",
+  "description": "Relax and unwind with these peaceful, ambient tunes.",
+  "genre": "Ambient/Chill",
+  "mood": "relaxed",
+  "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop",
+  "songs": [
+    "Ocean Waves.mp3",
+    "Forest Dreams.mp3",
+    "Meditation Music.mp3",
+    "Nature Sound.mp3",
+    "Relaxing Piano Music.mp3",
+    "Tibet.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Ocean Waves.mp3",
+      "title": "Ocean Waves",
+      "artist": "Nature Sounds",
+      "duration": "8:24"
+    },
+    {
+      "file": "Forest Dreams.mp3",
+      "title": "Forest Dreams",
+      "artist": "Ambient Nature",
+      "duration": "7:12"
+    },
+    {
+      "file": "Meditation Music.mp3",
+      "title": "Meditation Music",
+      "artist": "Inner Peace",
+      "duration": "6:33"
+    },
+    {
+      "file": "Nature Sound.mp3",
+      "title": "Nature Sound",
+      "artist": "Earth Harmony",
+      "duration": "5:47"
+    },
+    {
+      "file": "Relaxing Piano Music.mp3",
+      "title": "Relaxing Piano Music",
+      "artist": "Calm Keys",
+      "duration": "4:56"
+    },
+    {
+      "file": "Tibet.mp3",
+      "title": "Tibet",
+      "artist": "Mountain Serenity",
+      "duration": "9:18"
+    }
+  ]
 }

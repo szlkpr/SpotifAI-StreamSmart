@@ -1,14 +1,53 @@
 {
-    "title": "Jazz Lounge",
-    "description": "Smooth saxophone and sophisticated piano for late-night vibes.",
-    "genre": "Jazz",
-    "mood": "relaxed",
-    "songs": [
-        "Midnight Blue.mp3",
-        "Smoky Room.mp3",
-        "Piano Noir.mp3",
-        "Velvet Voice.mp3",
-        "City Lights.mp3",
-        "After Hours.mp3"
-    ]
+  "title": "Jazz Lounge 🎷",
+  "description": "Smooth saxophone and sophisticated piano for late-night vibes.",
+  "genre": "Jazz",
+  "mood": "relaxed",
+  "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop",
+  "songs": [
+    "Midnight Blue.mp3",
+    "Smoky Room.mp3",
+    "Piano Noir.mp3",
+    "Velvet Voice.mp3",
+    "City Lights.mp3",
+    "After Hours.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Midnight Blue.mp3",
+      "title": "Midnight Blue",
+      "artist": "Smooth Jazz Trio",
+      "duration": "5:47"
+    },
+    {
+      "file": "Smoky Room.mp3",
+      "title": "Smoky Room",
+      "artist": "The Lounge Cats",
+      "duration": "4:33"
+    },
+    {
+      "file": "Piano Noir.mp3",
+      "title": "Piano Noir",
+      "artist": "Miles & More",
+      "duration": "6:12"
+    },
+    {
+      "file": "Velvet Voice.mp3",
+      "title": "Velvet Voice",
+      "artist": "Luna Serenade",
+      "duration": "4:58"
+    },
+    {
+      "file": "City Lights.mp3",
+      "title": "City Lights",
+      "artist": "Urban Jazz",
+      "duration": "5:24"
+    },
+    {
+      "file": "After Hours.mp3",
+      "title": "After Hours",
+      "artist": "Late Night Sessions",
+      "duration": "7:15"
+    }
+  ]
 }

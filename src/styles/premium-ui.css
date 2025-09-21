@@ -261,6 +261,51 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
 }
 
+/* Enhanced song item layout */
+.songItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.songItem .info {
+    flex: 1;
+    min-width: 0;
+}
+
+.song-title {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    color: white;
+    margin-bottom: var(--space-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-artist {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-duration {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    min-width: 50px;
+    text-align: right;
+    margin-right: var(--space-2);
+}
+
+.ai-actions {
+    display: flex;
+    gap: var(--space-1);
+    margin-left: var(--space-2);
+}
+
 /* Enhanced AI Recommender */
 .ai-recommender {
     background: var(--primary-gradient);

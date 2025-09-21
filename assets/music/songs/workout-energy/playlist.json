@@ -1,15 +1,60 @@
 {
-    "title": "Workout Energy",
-    "description": "High-energy beats to power through your fitness goals.",
-    "genre": "Fitness/Electronic",
-    "mood": "motivated",
-    "songs": [
-        "Push Harder.mp3",
-        "Beast Mode.mp3",
-        "No Limits.mp3",
-        "Power Up.mp3",
-        "Unstoppable.mp3",
-        "Champion.mp3",
-        "Break Barriers.mp3"
-    ]
+  "title": "Workout Energy 💪",
+  "description": "High-energy beats to power through your fitness goals.",
+  "genre": "Fitness/Electronic",
+  "mood": "motivated",
+  "cover": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop",
+  "songs": [
+    "Push Harder.mp3",
+    "Beast Mode.mp3",
+    "No Limits.mp3",
+    "Power Up.mp3",
+    "Unstoppable.mp3",
+    "Champion.mp3",
+    "Break Barriers.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Push Harder.mp3",
+      "title": "Push Harder",
+      "artist": "Gym Motivation",
+      "duration": "3:28"
+    },
+    {
+      "file": "Beast Mode.mp3",
+      "title": "Beast Mode",
+      "artist": "Fitness First",
+      "duration": "3:54"
+    },
+    {
+      "file": "No Limits.mp3",
+      "title": "No Limits",
+      "artist": "Power Drive",
+      "duration": "4:12"
+    },
+    {
+      "file": "Power Up.mp3",
+      "title": "Power Up",
+      "artist": "Energy Boost",
+      "duration": "3:36"
+    },
+    {
+      "file": "Unstoppable.mp3",
+      "title": "Unstoppable",
+      "artist": "Momentum",
+      "duration": "4:05"
+    },
+    {
+      "file": "Champion.mp3",
+      "title": "Champion",
+      "artist": "Victory Sound",
+      "duration": "3:47"
+    },
+    {
+      "file": "Break Barriers.mp3",
+      "title": "Break Barriers",
+      "artist": "Limitless",
+      "duration": "4:18"
+    }
+  ]
 }

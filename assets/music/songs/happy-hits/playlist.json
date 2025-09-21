@@ -1,15 +1,60 @@
 {
-    "title": "Happy Hits!",
-    "description": "Feel-good songs to boost your mood and brighten your day.",
-    "genre": "Pop/Feel-Good",
-    "mood": "happy",
-    "songs": [
-        "Sunshine Melody.mp3",
-        "Good Vibes Only.mp3",
-        "Smile Again.mp3",
-        "Happy Dance.mp3",
-        "Joy Ride.mp3",
-        "Positive Energy.mp3",
-        "Uplifting Spirits.mp3"
-    ]
+  "title": "Happy Hits! 😊",
+  "description": "Feel-good songs to boost your mood and brighten your day.",
+  "genre": "Pop/Feel-Good",
+  "mood": "happy",
+  "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop",
+  "songs": [
+    "Sunshine Melody.mp3",
+    "Good Vibes Only.mp3",
+    "Smile Again.mp3",
+    "Happy Dance.mp3",
+    "Joy Ride.mp3",
+    "Positive Energy.mp3",
+    "Uplifting Spirits.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Sunshine Melody.mp3",
+      "title": "Sunshine Melody",
+      "artist": "Bright & Early",
+      "duration": "3:24"
+    },
+    {
+      "file": "Good Vibes Only.mp3",
+      "title": "Good Vibes Only",
+      "artist": "The Positives",
+      "duration": "2:58"
+    },
+    {
+      "file": "Smile Again.mp3",
+      "title": "Smile Again",
+      "artist": "Happy Hearts",
+      "duration": "3:45"
+    },
+    {
+      "file": "Happy Dance.mp3",
+      "title": "Happy Dance",
+      "artist": "Joyful Noise",
+      "duration": "3:12"
+    },
+    {
+      "file": "Joy Ride.mp3",
+      "title": "Joy Ride",
+      "artist": "Sunny Days",
+      "duration": "4:02"
+    },
+    {
+      "file": "Positive Energy.mp3",
+      "title": "Positive Energy",
+      "artist": "Upbeat Collective",
+      "duration": "3:36"
+    },
+    {
+      "file": "Uplifting Spirits.mp3",
+      "title": "Uplifting Spirits",
+      "artist": "Mood Boosters",
+      "duration": "3:51"
+    }
+  ]
 }

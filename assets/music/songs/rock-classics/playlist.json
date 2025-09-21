@@ -1,15 +1,60 @@
 {
-    "title": "Rock Classics",
-    "description": "Timeless guitar anthems and legendary rock hits.",
-    "genre": "Rock",
-    "mood": "powerful",
-    "songs": [
-        "Thunder Road.mp3",
-        "Midnight Express.mp3",
-        "Broken Wings.mp3",
-        "Steel Heart.mp3",
-        "Highway Legend.mp3",
-        "Electric Storm.mp3",
-        "Wild Fire.mp3"
-    ]
+  "title": "Rock Classics 🎸",
+  "description": "Timeless guitar anthems and legendary rock hits.",
+  "genre": "Rock",
+  "mood": "powerful",
+  "cover": "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=300&h=300&fit=crop",
+  "songs": [
+    "Thunder Road.mp3",
+    "Midnight Express.mp3",
+    "Broken Wings.mp3",
+    "Steel Heart.mp3",
+    "Highway Legend.mp3",
+    "Electric Storm.mp3",
+    "Wild Fire.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Thunder Road.mp3",
+      "title": "Thunder Road",
+      "artist": "Storm Riders",
+      "duration": "4:42"
+    },
+    {
+      "file": "Midnight Express.mp3",
+      "title": "Midnight Express",
+      "artist": "Highway Kings",
+      "duration": "5:18"
+    },
+    {
+      "file": "Broken Wings.mp3",
+      "title": "Broken Wings",
+      "artist": "Phoenix Rise",
+      "duration": "4:26"
+    },
+    {
+      "file": "Steel Heart.mp3",
+      "title": "Steel Heart",
+      "artist": "Iron Will",
+      "duration": "3:54"
+    },
+    {
+      "file": "Highway Legend.mp3",
+      "title": "Highway Legend",
+      "artist": "Road Warriors",
+      "duration": "5:03"
+    },
+    {
+      "file": "Electric Storm.mp3",
+      "title": "Electric Storm",
+      "artist": "Lightning Strike",
+      "duration": "4:37"
+    },
+    {
+      "file": "Wild Fire.mp3",
+      "title": "Wild Fire",
+      "artist": "Burning Sky",
+      "duration": "4:15"
+    }
+  ]
 }

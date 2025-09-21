@@ -1,14 +1,53 @@
 {
-    "title": "Focus Flow",
-    "description": "Ambient instrumentals to enhance concentration and productivity.",
-    "genre": "Ambient/Instrumental",
-    "mood": "focused",
-    "songs": [
-        "Deep Thoughts.mp3",
-        "Clear Mind.mp3",
-        "Zen Mode.mp3",
-        "Study Session.mp3",
-        "Flow State.mp3",
-        "Mindful Moments.mp3"
-    ]
+  "title": "Focus Flow 🧘",
+  "description": "Ambient instrumentals to enhance concentration and productivity.",
+  "genre": "Ambient/Instrumental",
+  "mood": "focused",
+  "cover": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=300&h=300&fit=crop",
+  "songs": [
+    "Deep Thoughts.mp3",
+    "Clear Mind.mp3",
+    "Zen Mode.mp3",
+    "Study Session.mp3",
+    "Flow State.mp3",
+    "Mindful Moments.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Deep Thoughts.mp3",
+      "title": "Deep Thoughts",
+      "artist": "Mindful Music",
+      "duration": "6:42"
+    },
+    {
+      "file": "Clear Mind.mp3",
+      "title": "Clear Mind",
+      "artist": "Mental Clarity",
+      "duration": "5:38"
+    },
+    {
+      "file": "Zen Mode.mp3",
+      "title": "Zen Mode",
+      "artist": "Peaceful Flow",
+      "duration": "7:15"
+    },
+    {
+      "file": "Study Session.mp3",
+      "title": "Study Session",
+      "artist": "Focus Lab",
+      "duration": "5:54"
+    },
+    {
+      "file": "Flow State.mp3",
+      "title": "Flow State",
+      "artist": "Productivity Zone",
+      "duration": "6:28"
+    },
+    {
+      "file": "Mindful Moments.mp3",
+      "title": "Mindful Moments",
+      "artist": "Calm Collective",
+      "duration": "5:12"
+    }
+  ]
 }

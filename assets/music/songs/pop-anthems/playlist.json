@@ -1,15 +1,60 @@
 {
-    "title": "Pop Anthems",
-    "description": "Catchy hooks and chart-topping melodies everyone loves.",
-    "genre": "Pop",
-    "mood": "upbeat",
-    "songs": [
-        "Summer Nights.mp3",
-        "Dancing Queen.mp3",
-        "Spotlight.mp3",
-        "Feel Good.mp3",
-        "Radio Star.mp3",
-        "Perfect Day.mp3",
-        "Celebration.mp3"
-    ]
+  "title": "Pop Anthems 🎵",
+  "description": "Catchy hooks and chart-topping melodies everyone loves.",
+  "genre": "Pop",
+  "mood": "upbeat",
+  "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop",
+  "songs": [
+    "Summer Nights.mp3",
+    "Dancing Queen.mp3",
+    "Spotlight.mp3",
+    "Feel Good.mp3",
+    "Radio Star.mp3",
+    "Perfect Day.mp3",
+    "Celebration.mp3"
+  ],
+  "metadata": [
+    {
+      "file": "Summer Nights.mp3",
+      "title": "Summer Nights",
+      "artist": "Pop Sensation",
+      "duration": "3:45"
+    },
+    {
+      "file": "Dancing Queen.mp3",
+      "title": "Dancing Queen",
+      "artist": "Party Time",
+      "duration": "4:12"
+    },
+    {
+      "file": "Spotlight.mp3",
+      "title": "Spotlight",
+      "artist": "Center Stage",
+      "duration": "3:33"
+    },
+    {
+      "file": "Feel Good.mp3",
+      "title": "Feel Good",
+      "artist": "Good Mood",
+      "duration": "3:58"
+    },
+    {
+      "file": "Radio Star.mp3",
+      "title": "Radio Star",
+      "artist": "Chart Toppers",
+      "duration": "3:21"
+    },
+    {
+      "file": "Perfect Day.mp3",
+      "title": "Perfect Day",
+      "artist": "Sunshine Pop",
+      "duration": "4:07"
+    },
+    {
+      "file": "Celebration.mp3",
+      "title": "Celebration",
+      "artist": "Party Anthem",
+      "duration": "3:44"
+    }
+  ]
 }
