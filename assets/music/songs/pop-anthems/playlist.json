@@ -1,0 +1,15 @@
+{
+    "title": "Pop Anthems",
+    "description": "Catchy hooks and chart-topping melodies everyone loves.",
+    "genre": "Pop",
+    "mood": "upbeat",
+    "songs": [
+        "Summer Nights.mp3",
+        "Dancing Queen.mp3",
+        "Spotlight.mp3",
+        "Feel Good.mp3",
+        "Radio Star.mp3",
+        "Perfect Day.mp3",
+        "Celebration.mp3"
+    ]
+}

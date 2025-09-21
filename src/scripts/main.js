@@ -148,7 +148,9 @@ async function explainSong(songTitle, buttonElement) {
 const PLAYLIST_FOLDERS = [
     "assets/music/songs/ncs", "happy-hits", "top-global", "release-radar",
     "daily-mix-1", "discover-weekly", "chill-vibes",
-    "indie-essentials", "hot-hits"
+    "indie-essentials", "hot-hits", "electronic-beats", "rock-classics",
+    "jazz-lounge", "hip-hop-hits", "pop-anthems", "acoustic-sessions",
+    "workout-energy", "focus-flow"
 ];
 
 async function getAllSongTitles() {
@@ -364,6 +366,8 @@ function renderAndAttachListeners(songArray) {
         const li = document.createElement('li');
         li.dataset.track = song;
 
+        li.className = 'songItem';
+        li.style.position = 'relative';
         li.innerHTML = `
             <img class="invert" width="34" src="/assets/images/svgs/music.svg" alt="Music icon">
             <div class="info">
@@ -397,6 +401,13 @@ function renderAndAttachListeners(songArray) {
 
         songUL.appendChild(li);
     }
+    
+    // Add favorite buttons to all song items after rendering
+    setTimeout(() => {
+        if (window.userPlaylistManager) {
+            window.userPlaylistManager.addFavoriteButtons();
+        }
+    }, 100);
 }
 
 async function main() {
@@ -566,6 +577,13 @@ async function main() {
     } else {
         console.log('⚠️ AI features using direct API calls (add Amplify for production)');
     }
+    
+    // Expose functions globally for user playlist system
+    window.songs = songs;
+    window.currFolder = currFolder;
+    window.updatePlaylistHeader = updatePlaylistHeader;
+    window.renderAndAttachListeners = renderAndAttachListeners;
+    window.playMusic = playMusic;
 }
 
 main();

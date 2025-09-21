@@ -1,10 +1,14 @@
-﻿{
-    "title":  "Chill Vibes",
-    "description":  "Relax and unwind with these tunes.",
-    "songs":  [
-                  "Meditation Music.mp3",
-                  "Nature Sound.mp3",
-                  "Relaxing Piano Music.mp3",
-                  "Tibet.mp3"
-              ]
+{
+    "title": "Chill Vibes",
+    "description": "Relax and unwind with these peaceful, ambient tunes.",
+    "genre": "Ambient/Chill",
+    "mood": "relaxed",
+    "songs": [
+        "Meditation Music.mp3",
+        "Nature Sound.mp3",
+        "Relaxing Piano Music.mp3",
+        "Tibet.mp3",
+        "Ocean Waves.mp3",
+        "Forest Dreams.mp3"
+    ]
 }

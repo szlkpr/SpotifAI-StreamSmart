@@ -2,8 +2,14 @@
 
 **AI-Powered Music Intelligence Platform** - Where Spotify meets ChatGPT to deepen your connection with music.
 
+## 🌟 [**🚀 LIVE DEMO**](https://main.dybbc6z573e0o.amplifyapp.com) 🌟
+
+> **Experience the future of music intelligence!** Click above to try the live application deployed on AWS Amplify.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org/)
+[![AWS Amplify](https://img.shields.io/badge/Deployed%20on-AWS%20Amplify-orange)](https://main.dybbc6z573e0o.amplifyapp.com)
+[![AI Powered](https://img.shields.io/badge/AI%20Powered-Google%20Gemini-blue)](https://ai.google.dev/)
 
 ## ✨ Features
 

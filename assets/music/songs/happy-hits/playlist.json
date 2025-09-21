@@ -1,12 +1,15 @@
-﻿{
-    "title":  "Happy Hits!",
-    "description":  "Feel-good songs to boost your mood.",
-    "songs":  [
-                  "Horror Background Atmosphere.mp3",
-                  "Horror.mp3",
-                  "Meditation Music.mp3",
-                  "Nature Sound.mp3",
-                  "Relaxing Piano Music.mp3",
-                  "Tibet.mp3"
-              ]
+{
+    "title": "Happy Hits!",
+    "description": "Feel-good songs to boost your mood and brighten your day.",
+    "genre": "Pop/Feel-Good",
+    "mood": "happy",
+    "songs": [
+        "Sunshine Melody.mp3",
+        "Good Vibes Only.mp3",
+        "Smile Again.mp3",
+        "Happy Dance.mp3",
+        "Joy Ride.mp3",
+        "Positive Energy.mp3",
+        "Uplifting Spirits.mp3"
+    ]
 }

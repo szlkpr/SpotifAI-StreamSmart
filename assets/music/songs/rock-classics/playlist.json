@@ -1,0 +1,15 @@
+{
+    "title": "Rock Classics",
+    "description": "Timeless guitar anthems and legendary rock hits.",
+    "genre": "Rock",
+    "mood": "powerful",
+    "songs": [
+        "Thunder Road.mp3",
+        "Midnight Express.mp3",
+        "Broken Wings.mp3",
+        "Steel Heart.mp3",
+        "Highway Legend.mp3",
+        "Electric Storm.mp3",
+        "Wild Fire.mp3"
+    ]
+}

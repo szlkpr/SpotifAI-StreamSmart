@@ -323,7 +323,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 50 50px;
+    padding: 5 50px;
 }
   
 .songinfo{
@@ -400,12 +400,13 @@ body{
     }
 
     .header {
+        position: relative;
         left: 0;
         width: 100%;
     }
 
     .abovebar {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 23px;
         align-items: center;
     }

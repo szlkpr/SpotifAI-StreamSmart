@@ -1,0 +1,15 @@
+{
+    "title": "Hip-Hop Hits",
+    "description": "Fresh beats and lyrical flow from the streets to the charts.",
+    "genre": "Hip-Hop/Rap",
+    "mood": "confident",
+    "songs": [
+        "Street Dreams.mp3",
+        "Rise Up.mp3",
+        "City Flow.mp3",
+        "Golden Era.mp3",
+        "Freestyle Kings.mp3",
+        "Underground.mp3",
+        "Victory Lap.mp3"
+    ]
+}

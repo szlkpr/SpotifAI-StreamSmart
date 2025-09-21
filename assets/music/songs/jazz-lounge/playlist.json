@@ -1,0 +1,14 @@
+{
+    "title": "Jazz Lounge",
+    "description": "Smooth saxophone and sophisticated piano for late-night vibes.",
+    "genre": "Jazz",
+    "mood": "relaxed",
+    "songs": [
+        "Midnight Blue.mp3",
+        "Smoky Room.mp3",
+        "Piano Noir.mp3",
+        "Velvet Voice.mp3",
+        "City Lights.mp3",
+        "After Hours.mp3"
+    ]
+}
