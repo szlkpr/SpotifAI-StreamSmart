@@ -104,7 +104,6 @@ body{
     background-color: rgb(105, 103, 103);
     cursor: pointer;
     --a: 1;
-
 }
 
 .card > *{
@@ -368,7 +367,7 @@ body{
 
 @media (max-width: 1400px) {
     .left {
-        position: absolute;
+        position: fixed;
         left: -100%;
         transition: all 0.3s ease-in-out;
         z-index: 10;
@@ -392,7 +391,7 @@ body{
 
     .songbuttons{
 
-        gap: 100px;
+        gap: 75px;
     }
 
     .volume{
@@ -425,7 +424,11 @@ body{
     .card {
         width: 55vw;
         position: static;
+        hover{
+            cursor: pointer;
+        }
     }
+
 
     .cardContainer {
         margin: 0;
