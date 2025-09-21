@@ -1,0 +1,564 @@
+/* Mobile Responsive Fixes - Header and Playbar Improvements */
+
+/* Global mobile enhancements */
+:root {
+    --header-height: 60px;
+    --playbar-height: 100px;
+    --sidebar-width: 280px;
+    --primary-green: #1ed760;
+    --primary-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    --dark-gradient: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    --card-gradient: linear-gradient(135deg, #252525 0%, #2a2a2a 100%);
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+/* Improved body and container setup */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Enhanced Header Fixes */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    width: 100%;
+    background: var(--primary-gradient);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    max-width: 100%;
+}
+
+.hamburgerContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Enhanced Hamburger Button */
+.hamburger {
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+    border-radius: 8px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.hamburger:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger:active {
+    transform: scale(0.95);
+}
+
+/* Navigation arrows enhancement */
+.hamburgerContainer svg {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.hamburgerContainer svg:hover {
+    background: var(--glass-bg);
+}
+
+/* Enhanced Sidebar */
+.left {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background: var(--dark-gradient);
+    backdrop-filter: blur(20px);
+    z-index: 1001;
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    padding: var(--header-height) 0 var(--playbar-height) 0;
+    box-shadow: 2px 0 30px rgba(0, 0, 0, 0.3);
+    border-right: 1px solid var(--glass-border);
+}
+
+.left.open {
+    left: 0;
+}
+
+/* Enhanced close button */
+.close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    z-index: 1002;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.close:hover img {
+    transform: rotate(90deg);
+}
+
+/* Enhanced Playbar Fixes */
+.playbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--playbar-height);
+    background: var(--primary-gradient);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid var(--glass-border);
+    z-index: 999;
+    box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Enhanced Seekbar */
+.seekbar {
+    height: 4px;
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.seekbar:hover {
+    height: 6px;
+    top: 7px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 0%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.seekbar:hover .circle {
+    width: 16px;
+    height: 16px;
+    top: -6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Enhanced Abovebar Layout */
+.abovebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px 16px 16px;
+    height: calc(var(--playbar-height) - 20px);
+    gap: 12px;
+}
+
+/* Enhanced Song Info */
+.songinfo {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.songinfo {
+    font-size: 0.95em;
+    font-weight: 600;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced Song Buttons */
+.songbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.songbuttons img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.songbuttons img:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.songbuttons img:active {
+    transform: scale(0.95);
+}
+
+/* Enhanced Play Button */
+.playbtn {
+    width: 48px !important;
+    height: 48px !important;
+    background: white !important;
+    border-radius: 50% !important;
+    padding: 12px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    border: none !important;
+}
+
+.playbtn:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Enhanced Volume and Time Controls */
+.timevol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+    min-width: 80px;
+    flex-shrink: 0;
+}
+
+.volume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.volume img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.volume img:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.range {
+    width: 70px;
+}
+
+.range input[type="range"] {
+    width: 70px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    -webkit-appearance: none;
+    transition: all 0.3s ease;
+}
+
+.range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.range input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.songtime {
+    font-size: 0.75em;
+    padding: 0;
+    text-align: center;
+    width: auto;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    min-width: 60px;
+}
+
+/* Main content adjustment */
+.right {
+    width: 100%;
+    margin-top: var(--header-height);
+    padding-bottom: calc(var(--playbar-height) + 20px);
+    transition: all 0.3s ease;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 56px;
+        --playbar-height: 90px;
+        --sidebar-width: 260px;
+    }
+    
+    .songbuttons {
+        gap: 16px;
+    }
+    
+    .songbuttons img {
+        width: 32px;
+        height: 32px;
+        padding: 6px;
+    }
+    
+    .playbtn {
+        width: 42px !important;
+        height: 42px !important;
+        padding: 10px !important;
+    }
+    
+    .volume img {
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+    }
+    
+    .range {
+        width: 60px;
+    }
+    
+    .range input[type="range"] {
+        width: 60px;
+    }
+    
+    .songtime {
+        font-size: 0.7em;
+        min-width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --header-height: 52px;
+        --playbar-height: 80px;
+        --sidebar-width: 240px;
+    }
+    
+    .abovebar {
+        padding: 16px 12px 12px 12px;
+    }
+    
+    .songbuttons {
+        gap: 12px;
+    }
+    
+    .songbuttons img {
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+    }
+    
+    .playbtn {
+        width: 38px !important;
+        height: 38px !important;
+        padding: 8px !important;
+    }
+    
+    .timevol {
+        min-width: 70px;
+    }
+    
+    .volume img {
+        width: 18px;
+        height: 18px;
+        padding: 4px;
+    }
+    
+    .range {
+        width: 50px;
+    }
+    
+    .range input[type="range"] {
+        width: 50px;
+        height: 3px;
+    }
+    
+    .range input[type="range"]::-webkit-slider-thumb {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .songtime {
+        font-size: 0.65em;
+        min-width: 45px;
+    }
+    
+    .circle {
+        width: 12px;
+        height: 12px;
+        top: -4px;
+    }
+    
+    .seekbar:hover .circle {
+        width: 14px;
+        height: 14px;
+        top: -5px;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-width: 896px) and (orientation: landscape) and (max-height: 500px) {
+    :root {
+        --header-height: 48px;
+        --playbar-height: 70px;
+    }
+    
+    .abovebar {
+        padding: 12px 16px 8px 16px;
+    }
+    
+    .songbuttons {
+        gap: 14px;
+    }
+    
+    .songbuttons img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .playbtn {
+        width: 36px !important;
+        height: 36px !important;
+        padding: 8px !important;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.1s !important;
+        animation-duration: 0.1s !important;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .header {
+        background: #000;
+        border-bottom: 2px solid #fff;
+    }
+    
+    .playbar {
+        background: #000;
+        border-top: 2px solid #fff;
+    }
+    
+    .left {
+        background: #000;
+        border-right: 2px solid #fff;
+    }
+    
+    .hamburger,
+    .close,
+    .songbuttons img,
+    .volume img {
+        border: 2px solid #fff;
+        background: #000;
+    }
+    
+    .seekbar {
+        background: #fff;
+    }
+    
+    .circle {
+        background: #fff;
+        border: 2px solid #000;
+    }
+}
+
+/* Focus states for keyboard navigation */
+.hamburger:focus,
+.close:focus,
+.songbuttons img:focus,
+.volume img:focus,
+.range input[type="range"]:focus {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+}
+
+.seekbar:focus {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 4px;
+}

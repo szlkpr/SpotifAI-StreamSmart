@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles/ai-features.css">
     <link rel="stylesheet" href="styles/user-playlists.css">
     <link rel="stylesheet" href="styles/mobile-responsive.css">
+    <link rel="stylesheet" href="styles/mobile-fixes.css">
+    <link rel="stylesheet" href="styles/premium-ui.css">
+    <link rel="stylesheet" href="styles/advanced-navigation.css">
+    <link rel="stylesheet" href="styles/enhanced-cards.css">
     <link rel="icon" href="data:,">
     <title>SpotifAI - StreamSmart | Your Personal Music Analyst</title>
 </head>
@@ -66,8 +70,8 @@
     <div class="spotifyPlaylists">
         
         <!-- AI Song Recommendations Section -->
-        <div class="ai-recommender">
-            <h2>Smart Recommendations</h2>
+        <div class="ai-recommender premium-card bounce-in">
+            <h2 class="text-gradient">Smart Recommendations</h2>
             <p>Describe the music you want to hear, and let AI find it for you.</p>
             <div class="ai-search-container">
                 <input type="text" id="ai-recommendation-input" placeholder="e.g., upbeat funk songs for a workout">
@@ -80,7 +84,7 @@
         <h1>SpotifAI Curated Collections</h1>
 
         <div class="cardContainer">
-            <div data-folder="happy-hits" class="card">
+            <div data-folder="happy-hits" class="card slide-in-up">
                 <div class="play">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-linejoin="round" stroke-width="1.5" />
