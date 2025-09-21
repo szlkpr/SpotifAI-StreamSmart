@@ -11,7 +11,7 @@ applications:
           commands:
             - echo "Building SpotifAI - StreamSmart..."
             - echo "Creating environment configuration..."
-            - echo "window.ENV = { GEMINI_API_KEY: '$GEMINI_API_KEY' };" > src/scripts/env.js
+            - printf 'window.ENV = { GEMINI_API_KEY: "%s" };' "$GEMINI_API_KEY" > src/scripts/env.js
             - echo "Build complete!"
       artifacts:
         baseDirectory: ./
