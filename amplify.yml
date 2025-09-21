@@ -1,26 +1,24 @@
 version: 1
-applications:
-  - appRoot: .
-    frontend:
-      phases:
-        preBuild:
-          commands:
-            - echo "Installing dependencies..."
-            - npm ci
-        build:
-          commands:
-            - echo "Building SpotifAI - StreamSmart..."
-            - echo "Creating environment configuration..."
-            - printf 'window.ENV = { GEMINI_API_KEY: "%s" };' "$GEMINI_API_KEY" > src/scripts/env.js
-            - echo "Build complete!"
-      artifacts:
-        baseDirectory: ./
-        files:
-          - '**/*'
-        exclude:
-          - node_modules/**/*
-          - .git/**/*
-          - archive/**/*
-      cache:
-        paths:
-          - node_modules/**/*
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Installing dependencies..."
+        - npm ci
+    build:
+      commands:
+        - echo "Building SpotifAI - StreamSmart..."
+        - echo "Creating environment configuration..."
+        - echo "window.ENV = { GEMINI_API_KEY: '$GEMINI_API_KEY' };" > src/scripts/env.js
+        - echo "Build complete!"
+  artifacts:
+    baseDirectory: .
+    files:
+      - '**/*'
+    exclude:
+      - node_modules/**/*
+      - .git/**/*
+      - archive/**/*
+  cache:
+    paths:
+      - node_modules/**/*
