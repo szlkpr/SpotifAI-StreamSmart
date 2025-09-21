@@ -386,8 +386,19 @@ body{
     
     .songinfo
     .songtime {
+        display: none;
         width: auto;
     }
+
+    .songbuttons{
+
+        gap: 100px;
+    }
+
+    .volume{
+        display: none;
+    }
+    
     .right {
         width: 100vw;
     }
@@ -400,7 +411,7 @@ body{
     }
 
     .header {
-        position: relative;
+        position: fixed;
         left: 0;
         width: 100%;
     }
@@ -413,6 +424,7 @@ body{
 
     .card {
         width: 55vw;
+        position: static;
     }
 
     .cardContainer {
@@ -461,6 +473,7 @@ body{
     }
 
     .songinfo, .songtime{
+        display: none;
         text-align: center;
         padding: 15px;
     }

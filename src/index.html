@@ -6,13 +6,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/utility.css">
     <link rel="stylesheet" href="styles/ai-features.css">
-    <link rel="stylesheet" href="styles/user-playlists.css">
-    <link rel="stylesheet" href="styles/mobile-responsive.css">
-    <link rel="stylesheet" href="styles/mobile-fixes.css">
-    <link rel="stylesheet" href="styles/premium-ui.css">
-    <link rel="stylesheet" href="styles/advanced-navigation.css">
-    <link rel="stylesheet" href="styles/enhanced-cards.css">
-    <link rel="stylesheet" href="styles/mobile-playbar-fix.css">
     <link rel="icon" href="data:,">
     <title>SpotifAI - StreamSmart | Your Personal Music Analyst</title>
 </head>
@@ -71,8 +64,8 @@
     <div class="spotifyPlaylists">
         
         <!-- AI Song Recommendations Section -->
-        <div class="ai-recommender premium-card bounce-in">
-            <h2 class="text-gradient">Smart Recommendations</h2>
+        <div class="ai-recommender">
+            <h2>Smart Recommendations</h2>
             <p>Describe the music you want to hear, and let AI find it for you.</p>
             <div class="ai-search-container">
                 <input type="text" id="ai-recommendation-input" placeholder="e.g., upbeat funk songs for a workout">
@@ -82,10 +75,10 @@
             <div id="ai-recommendation-results" class="recommendation-list"></div>
         </div>
 
-        <h1>SpotifAI Curated Collections</h1>
+        <h1>SpotifAI Collections</h1>
 
         <div class="cardContainer">
-            <div data-folder="happy-hits" class="card slide-in-up">
+            <div data-folder="happy-hits" class="card">
                 <div class="play">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-linejoin="round" stroke-width="1.5" />
@@ -162,7 +155,7 @@
                 <p>The best of the indie music scene.</p>
             </div>
         
-            <div data-folder="hot-hits" class="card slide-in-up">
+            <div data-folder="hot-hits" class="card">
                 <div class="play">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-linejoin="round" stroke-width="1.5" />
@@ -171,61 +164,6 @@
                 <img src="https://i.scdn.co/image/ab67706f0000000245d65c51698f838227328ec4" alt="">
                 <h2>Hot Hits</h2>
                 <p>The best Hits of the indian music scene.</p>
-            </div>
-            
-            <div data-folder="electronic-beats" class="card slide-in-up">
-                <div class="play">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-linejoin="round" stroke-width="1.5" />
-                    </svg>
-                </div>
-                <img src="https://images.unsplash.com/photo-1574193080071-54b43e0f3a89?w=300&h=300&fit=crop" alt="Electronic Beats">
-                <h2>Electronic Beats 🎛️</h2>
-                <p>Pulsing synths and driving beats for the digital age.</p>
-            </div>
-            
-            <div data-folder="rock-classics" class="card slide-in-up">
-                <div class="play">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-linejoin="round" stroke-width="1.5" />
-                    </svg>
-                </div>
-                <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=300&h=300&fit=crop" alt="Rock Classics">
-                <h2>Rock Classics 🎸</h2>
-                <p>Timeless guitar anthems and legendary rock hits.</p>
-            </div>
-            
-            <div data-folder="jazz-lounge" class="card slide-in-up">
-                <div class="play">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-linejoin="round" stroke-width="1.5" />
-                    </svg>
-                </div>
-                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop" alt="Jazz Lounge">
-                <h2>Jazz Lounge 🎷</h2>
-                <p>Smooth saxophone and sophisticated piano vibes.</p>
-            </div>
-            
-            <div data-folder="hip-hop-hits" class="card slide-in-up">
-                <div class="play">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-linejoin="round" stroke-width="1.5" />
-                    </svg>
-                </div>
-                <img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=300&h=300&fit=crop" alt="Hip-Hop Hits">
-                <h2>Hip-Hop Hits 🎤</h2>
-                <p>Fresh beats and lyrical flow from the streets.</p>
-            </div>
-            
-            <div data-folder="workout-energy" class="card slide-in-up">
-                <div class="play">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-linejoin="round" stroke-width="1.5" />
-                    </svg>
-                </div>
-                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop" alt="Workout Energy">
-                <h2>Workout Energy 💪</h2>
-                <p>High-energy beats to power through your fitness goals.</p>
             </div>
         </div>
         
@@ -270,13 +208,7 @@
       </div>
   </div>
   
-  <!-- Environment Configuration (Generated by Amplify Build) -->
   <script src="scripts/env.js"></script>
-  
-  <!-- Main Application Script -->
   <script src="scripts/main.js"></script>
-  
-  <!-- User Playlists and Favorites System -->
-  <script src="scripts/user-playlists.js"></script>
 </body>
 </html>

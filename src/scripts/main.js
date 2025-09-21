@@ -384,7 +384,6 @@ function renderAndAttachListeners(songArray, playlistMetadata = null) {
                 <div class="song-title">${songName}</div>
                 <div class="song-artist">${artistName}</div>
             </div>
-            <div class="song-duration">${duration}</div>
             <div class="ai-actions">
                 <button class="ai-btn mood-btn" title="Detect Song Mood">
                     <img src="/assets/images/svgs/mood.svg" alt="Detect Mood">

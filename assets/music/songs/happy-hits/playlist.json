@@ -5,56 +5,43 @@
   "mood": "happy",
   "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop",
   "songs": [
-    "Sunshine Melody.mp3",
-    "Good Vibes Only.mp3",
-    "Smile Again.mp3",
-    "Happy Dance.mp3",
-    "Joy Ride.mp3",
-    "Positive Energy.mp3",
-    "Uplifting Spirits.mp3"
+    "Happy Song.mp3",
+    "Brilliant Smile.mp3",
+    "Meditation Music.mp3",
+    "Nature Sound.mp3",
+    "Sunshine.mp3",
+    "Tibet.mp3"
   ],
   "metadata": [
     {
-      "file": "Sunshine Melody.mp3",
-      "title": "Sunshine Melody",
-      "artist": "Bright & Early",
-      "duration": "3:24"
+      "file": "Happy Song.mp3",
+      "title": "Background Music Happy",
+      "artist": "Happy Tunes",
+      "duration": "3:28"
     },
     {
-      "file": "Good Vibes Only.mp3",
-      "title": "Good Vibes Only",
-      "artist": "The Positives",
-      "duration": "2:58"
+      "file": "Brilliant Smile.mp3",
+      "title": "Brilliant Smile",
+      "artist": "Sunny Sounds",
+      "duration": "2:45"
+    }, 
+    {
+      "file": "Meditation Music.mp3",
+      "title": "Meditation Music",
+      "artist": "Peaceful Minds",
+      "duration": "4:20"
     },
     {
-      "file": "Smile Again.mp3",
-      "title": "Smile Again",
-      "artist": "Happy Hearts",
-      "duration": "3:45"
+      "file": "Nature Sound.mp3",
+      "title": "Nature Sound",
+      "artist": "Earth Harmony",
+      "duration": "3:55"
     },
     {
-      "file": "Happy Dance.mp3",
-      "title": "Happy Dance",
-      "artist": "Joyful Noise",
-      "duration": "3:12"
-    },
-    {
-      "file": "Joy Ride.mp3",
-      "title": "Joy Ride",
-      "artist": "Sunny Days",
-      "duration": "4:02"
-    },
-    {
-      "file": "Positive Energy.mp3",
-      "title": "Positive Energy",
-      "artist": "Upbeat Collective",
-      "duration": "3:36"
-    },
-    {
-      "file": "Uplifting Spirits.mp3",
-      "title": "Uplifting Spirits",
-      "artist": "Mood Boosters",
-      "duration": "3:51"
+      "file": "Tibet.mp3",
+      "title": "Tibet",
+      "artist": "Zen Sounds",
+      "duration": "5:15"
     }
   ]
 }
