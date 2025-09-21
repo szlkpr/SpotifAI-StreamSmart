@@ -7,7 +7,7 @@ frontend:
     build:
       commands:
         - echo Building SpotifAI StreamSmart
-        - node -e "require('fs').writeFileSync('src/scripts/env.js', 'window.ENV = { GEMINI_API_KEY: \'' + process.env.GEMINI_API_KEY + '\' };')"
+        - node build-env.js
   artifacts:
     baseDirectory: .
     files:
