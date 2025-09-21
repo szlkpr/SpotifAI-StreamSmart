@@ -3,22 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "Installing dependencies..."
         - npm ci
     build:
       commands:
-        - echo "Building SpotifAI - StreamSmart..."
-        - echo "Creating environment configuration..."
-        - echo "window.ENV = { GEMINI_API_KEY: '$GEMINI_API_KEY' };" > src/scripts/env.js
-        - echo "Build complete!"
+        - echo Building SpotifAI StreamSmart
+        - node -e "require('fs').writeFileSync('src/scripts/env.js', 'window.ENV = { GEMINI_API_KEY: \'' + process.env.GEMINI_API_KEY + '\' };')"
   artifacts:
     baseDirectory: .
     files:
       - '**/*'
     exclude:
-      - node_modules/**/*
-      - .git/**/*
-      - archive/**/*
-  cache:
-    paths:
       - node_modules/**/*
